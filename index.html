@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Anderson — Writer &amp; Lyricist</title>
+<meta name="description" content="Portfolio of Mark Anderson — writer and lyricist. Bloom (animated musical feature), Ember Oracle, A Unified Theory, and Poetry for the Peers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F3ECDD;
+    --bg-raised:#FFFFFF;
+    --ink:#2B2016;
+    --ink-dim:#6E6151;
+    --ember:#C1631F;
+    --ember-soft:#E2903F;
+    --forest:#3E6350;
+    --line: rgba(43,32,22,0.14);
+    --shadow: 0 1px 2px rgba(43,32,22,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#171209;
+      --bg-raised:#221B12;
+      --ink:#F2EAD9;
+      --ink-dim:#B3A48C;
+      --ember:#E2903F;
+      --ember-soft:#F0A85C;
+      --forest:#6FA087;
+      --line: rgba(242,234,217,0.12);
+      --shadow: 0 1px 2px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#171209;
+    --bg-raised:#221B12;
+    --ink:#F2EAD9;
+    --ink-dim:#B3A48C;
+    --ember:#E2903F;
+    --ember-soft:#F0A85C;
+    --forest:#6FA087;
+    --line: rgba(242,234,217,0.12);
+    --shadow: 0 1px 2px rgba(0,0,0,0.35);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Work Sans', system-ui, sans-serif;
+  }
+  img{max-width:100%;}
+  h1,h2,h3{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    text-wrap:balance;
+    margin:0;
+    color:var(--ink);
+  }
+  a{color:inherit;}
+  p{margin:0;}
+  .eyebrow, .tag, .section-eyebrow, .navlink{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    text-transform:uppercase;
+    letter-spacing:0.09em;
+    font-size:0.72rem;
+  }
+
+  .page{max-width:920px;margin-inline:auto;padding-inline:20px;}
+
+  /* --- topbar --- */
+  .topbar{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:920px;margin-inline:auto;padding-inline:20px;
+    display:flex;align-items:center;justify-content:space-between;
+    padding-block:14px;
+  }
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;letter-spacing:0.01em;}
+  .navlinks{display:flex;gap:22px;}
+  .navlink{color:var(--ink-dim);text-decoration:none;}
+  .navlink:hover{color:var(--ember);}
+
+  /* --- hero --- */
+  .hero{position:relative;padding-block:76px 56px;overflow:hidden;}
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0.55;}
+  .hero-inner{position:relative;max-width:640px;}
+  .hero .eyebrow{color:var(--ember);margin-bottom:14px;}
+  .hero h1{font-size:clamp(2.4rem, 6vw, 3.4rem);margin-bottom:18px;}
+  .hero .thesis{font-size:1.08rem;line-height:1.55;color:var(--ink-dim);max-width:52ch;}
+  .hero-links{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+  .btn{
+    font-family:'Work Sans',sans-serif;font-weight:500;font-size:0.92rem;
+    padding:11px 20px;border-radius:3px;text-decoration:none;
+    border:1px solid var(--line);
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn--primary{background:var(--ember);color:#1A1006;border-color:var(--ember);}
+  .btn--ghost{color:var(--ink);}
+  .btn--small{font-size:0.85rem;padding:8px 16px;margin-top:6px;}
+
+  section{padding-block:56px;border-top:1px solid var(--line);}
+  .section-eyebrow{color:var(--ink-dim);margin-bottom:28px;}
+
+  /* --- works --- */
+  .work--featured{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;
+    background:var(--bg-raised);border:1px solid var(--line);border-radius:6px;
+    padding:22px;box-shadow:var(--shadow);
+  }
+  .work-media img{width:100%;display:block;border-radius:3px;}
+  .work-copy .tag{color:var(--ember);margin-bottom:10px;}
+  .work-copy h2{font-size:1.9rem;margin-bottom:10px;}
+  .work-copy p.body{color:var(--ink-dim);line-height:1.6;margin-bottom:10px;font-size:0.98rem;}
+
+  .work-grid{
+    margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  }
+  .work{
+    background:var(--bg-raised);border:1px solid var(--line);border-radius:6px;
+    padding:20px;box-shadow:var(--shadow);
+    display:flex;flex-direction:column;gap:10px;height:100%;
+  }
+  .work .tag{color:var(--forest);}
+  .work h3{font-size:1.25rem;}
+  .work p.body{color:var(--ink-dim);line-height:1.55;font-size:0.92rem;flex-grow:1;}
+  .work-linkrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:2px;}
+  .work-linkrow a{font-size:0.85rem;font-weight:500;color:var(--ember);text-decoration:none;border-bottom:1px solid transparent;}
+  .work-linkrow a:hover{border-bottom-color:var(--ember);}
+
+  /* --- about --- */
+  .about-inner{max-width:640px;}
+  .about p.body{color:var(--ink-dim);line-height:1.7;font-size:1rem;margin-bottom:16px;}
+  .about strong{color:var(--ink);font-weight:600;}
+
+  /* --- contact --- */
+  .contact-grid{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;}
+  .contact-direct p.body{font-size:1.05rem;margin-bottom:8px;}
+  .contact-direct a{text-decoration:none;border-bottom:1px solid var(--line);}
+  .contact-direct a:hover{border-bottom-color:var(--ember);}
+  .social-list{display:flex;flex-direction:column;gap:8px;}
+  .social-list a{text-decoration:none;font-size:0.98rem;display:inline-flex;align-items:baseline;gap:8px;}
+  .social-list a .plat{color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;min-width:76px;}
+  .social-list a:hover .handle{color:var(--ember);}
+
+  footer{padding-block:28px 48px;color:var(--ink-dim);font-size:0.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+  @media (max-width:720px){
+    .work--featured{grid-template-columns:1fr;}
+    .work-grid{grid-template-columns:1fr;}
+    .navlinks{gap:14px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Mark Anderson</div>
+    <nav class="navlinks">
+      <a class="navlink" href="#works">Work</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="page">
+  <section class="hero">
+    <canvas id="embers"></canvas>
+    <div class="hero-inner">
+      <p class="eyebrow">Writer · Lyricist · Creator</p>
+      <h1>Stories built to sit with hard things until they make sense.</h1>
+      <p class="thesis">I write animated musicals, songs, and books about the people who don't quite fit the shape they're handed — grief, distance, and neurodivergent characters written as themselves, not as lessons. Based in Barnoldswick, Lancashire.</p>
+      <div class="hero-links">
+        <a class="btn btn--primary" href="#works">View the work</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <p class="section-eyebrow">The Work</p>
+
+    <article class="work--featured">
+      <div class="work-media"><img src="bloom-title.jpg" alt="Bloom — title artwork" width="1200" height="746"></div>
+      <div class="work-copy">
+        <p class="tag">Animated Musical Feature — In Development</p>
+        <h2>Bloom</h2>
+        <p class="body">A girl who feels invisible to her busy father meets a boy who was once a tree — and must prove the impossible before the forest, and the boy, are lost forever.</p>
+        <p class="body">A fully-developed original property: complete story, character, and world bibles, a full first-draft screenplay, and a 9-track original soundtrack, several songs already recorded as demos. Thea is written as autistic, drawn from my own daughter; William and her father are ADHD-coded, drawn from my own son and myself.</p>
+        <div class="work-linkrow">
+          <a class="btn btn--ghost btn--small" href="bloom-stage32-pitch-pack.pdf" download>Download the Pitch Pack (PDF) ↓</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="work-grid">
+      <article class="work">
+        <p class="tag">Original Musical Project</p>
+        <h3>Ember Oracle</h3>
+        <p class="body">A musical project released across streaming platforms — writing and lyrics throughout.</p>
+        <div class="work-linkrow">
+          <a href="https://open.spotify.com/album/4VlkgVDNRnEtIwOp4CXaZL?si=lmMUrL3WQ7iSfpBvPLHRJA" target="_blank" rel="noopener">Spotify ↗</a>
+          <a href="https://youtube.com/@ember_oracle?si=IMhxKElSTIUv6GDM" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
+      </article>
+      <article class="work">
+        <p class="tag">Non-Fiction</p>
+        <h3>A Unified Theory</h3>
+        <p class="body">A non-fiction book, published on Amazon and Kindle.</p>
+      </article>
+      <article class="work">
+        <p class="tag">Poetry Anthology</p>
+        <h3>Poetry for the Peers</h3>
+        <p class="body">Contributing poet to this collaborative poetry anthology.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-eyebrow">About</p>
+    <div class="about-inner">
+      <p class="body">I'm a writer, lyricist, and creator based in Barnoldswick, Lancashire. My work spans poetry, songwriting, and emotionally driven storytelling, with a focus on neurodivergent characters and honest family dynamics — written from the inside, not as an outside observer.</p>
+      <p class="body"><strong>Bloom</strong>, an animated musical feature, is where most of my energy sits right now: every lyric in its soundtrack is mine, several songs are already recorded as finished demos, and the concept art for every major character was developed under my direction.</p>
+      <p class="body">Alongside it: <strong>Ember Oracle</strong>, a musical project available on YouTube, Spotify, Apple Music, and Amazon Music; <strong>A Unified Theory</strong>, a non-fiction book published on Amazon and Kindle; and a contribution to the collaborative poetry anthology <strong>Poetry for the Peers</strong>.</p>
+      <p class="body">Currently developing Bloom full-time, and actively open to collaborators, representation, and production partners.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-eyebrow">Get In Touch</p>
+    <div class="contact-grid">
+      <div class="contact-direct">
+        <p class="body"><a href="mailto:anderson5903@hotmail.co.uk">anderson5903@hotmail.co.uk</a></p>
+        <p class="body"><a href="tel:+447445922972">(+44) 7445 922 972</a></p>
+      </div>
+      <div class="social-list">
+        <a href="https://www.instagram.com/marka5903?stkn=bzFzMDdvY3o4ajc4" target="_blank" rel="noopener"><span class="plat">Instagram</span><span class="handle">@marka5903</span></a>
+        <a href="https://www.facebook.com/share/1DvLdeTVnX/" target="_blank" rel="noopener"><span class="plat">Facebook</span><span class="handle">Mark Anderson</span></a>
+        <a href="https://youtube.com/@ember_oracle?si=IMhxKElSTIUv6GDM" target="_blank" rel="noopener"><span class="plat">YouTube</span><span class="handle">@ember_oracle</span></a>
+        <a href="https://open.spotify.com/album/4VlkgVDNRnEtIwOp4CXaZL?si=lmMUrL3WQ7iSfpBvPLHRJA" target="_blank" rel="noopener"><span class="plat">Spotify</span><span class="handle">Ember Oracle</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Mark Anderson — Writer &amp; Lyricist</span>
+    <span>Barnoldswick, Lancashire, UK</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var canvas = document.getElementById('embers');
+  if(!canvas) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce) return;
+  var ctx = canvas.getContext('2d');
+  var particles = [];
+  function resize(){
+    var rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = rect.width * devicePixelRatio;
+    canvas.height = rect.height * devicePixelRatio;
+    canvas.style.width = rect.width + 'px';
+    canvas.style.height = rect.height + 'px';
+  }
+  function seed(){
+    particles = [];
+    var count = Math.max(18, Math.floor((canvas.width/devicePixelRatio) / 40));
+    for(var i=0;i<count;i++){
+      particles.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height + canvas.height*0.2,
+        r: (Math.random()*1.6+0.6) * devicePixelRatio,
+        speed: (Math.random()*0.35+0.12) * devicePixelRatio,
+        drift: (Math.random()-0.5)*0.25,
+        alpha: Math.random()*0.5+0.25
+      });
+    }
+  }
+  function tick(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    for(var i=0;i<particles.length;i++){
+      var p = particles[i];
+      p.y -= p.speed;
+      p.x += p.drift;
+      if(p.y < -10){ p.y = canvas.height + 10; p.x = Math.random()*canvas.width; }
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(226,144,63,' + p.alpha + ')';
+      ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+  window.addEventListener('resize', function(){ resize(); seed(); });
+  resize(); seed(); tick();
+})();
+</script>
+</body>
+</html>
