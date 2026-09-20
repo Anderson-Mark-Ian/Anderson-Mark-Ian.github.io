@@ -7,42 +7,19 @@
 <meta name="description" content="Portfolio of Mark Anderson — writer and lyricist. Bloom (animated musical feature), Ember Oracle, A Unified Theory, and Poetry for the Peers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F3ECDD;
-    --bg-raised:#FFFFFF;
-    --ink:#2B2016;
-    --ink-dim:#6E6151;
-    --ember:#C1631F;
-    --ember-soft:#E2903F;
-    --forest:#3E6350;
-    --line: rgba(43,32,22,0.14);
-    --shadow: 0 1px 2px rgba(43,32,22,0.06);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#171209;
-      --bg-raised:#221B12;
-      --ink:#F2EAD9;
-      --ink-dim:#B3A48C;
-      --ember:#E2903F;
-      --ember-soft:#F0A85C;
-      --forest:#6FA087;
-      --line: rgba(242,234,217,0.12);
-      --shadow: 0 1px 2px rgba(0,0,0,0.35);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#171209;
-    --bg-raised:#221B12;
-    --ink:#F2EAD9;
+    --bg:#0B0704;
+    --bg-raised:#18110A;
+    --ink:#F4ECDD;
     --ink-dim:#B3A48C;
-    --ember:#E2903F;
-    --ember-soft:#F0A85C;
-    --forest:#6FA087;
-    --line: rgba(242,234,217,0.12);
-    --shadow: 0 1px 2px rgba(0,0,0,0.35);
+    --ember:#E85D0E;
+    --ember-soft:#FF8A3D;
+    --ember-blue:#2F8FE0;
+    --ember-blue-soft:#5CB3F5;
+    --line: rgba(242,234,217,0.13);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4);
   }
 
   *{box-sizing:border-box;}
@@ -50,12 +27,13 @@
   body{
     background:var(--bg);
     color:var(--ink);
-    font-family:'Work Sans', system-ui, sans-serif;
+    font-family:'Inter', system-ui, sans-serif;
   }
   img{max-width:100%;}
   h1,h2,h3{
-    font-family:'Fraunces', Georgia, serif;
-    font-weight:600;
+    font-family:'Cinzel', Georgia, serif;
+    font-weight:700;
+    letter-spacing:0.01em;
     text-wrap:balance;
     margin:0;
     color:var(--ink);
@@ -85,13 +63,17 @@
     display:flex;align-items:center;justify-content:space-between;
     padding-block:14px;
   }
-  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;letter-spacing:0.01em;}
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:1.05rem;letter-spacing:0.02em;}
   .navlinks{display:flex;gap:22px;}
   .navlink{color:var(--ink-dim);text-decoration:none;}
   .navlink:hover{color:var(--ember);}
 
   /* --- hero --- */
-  .hero{position:relative;padding-block:76px 56px;overflow:hidden;}
+  .hero{position:relative;padding-block:76px 56px;overflow:hidden;
+    background:
+      radial-gradient(circle at 12% 15%, rgba(232,93,14,0.16), transparent 45%),
+      radial-gradient(circle at 88% 80%, rgba(47,143,224,0.14), transparent 48%);
+  }
   .hero canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0.55;}
   .hero-inner{position:relative;max-width:640px;}
   .hero .eyebrow{color:var(--ember);margin-bottom:14px;}
@@ -99,7 +81,7 @@
   .hero .thesis{font-size:1.08rem;line-height:1.55;color:var(--ink-dim);max-width:52ch;}
   .hero-links{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
   .btn{
-    font-family:'Work Sans',sans-serif;font-weight:500;font-size:0.92rem;
+    font-family:'Inter',sans-serif;font-weight:500;font-size:0.92rem;
     padding:11px 20px;border-radius:3px;text-decoration:none;
     border:1px solid var(--line);
     display:inline-flex;align-items:center;gap:8px;
@@ -130,7 +112,11 @@
     padding:20px;box-shadow:var(--shadow);
     display:flex;flex-direction:column;gap:10px;height:100%;
   }
-  .work .tag{color:var(--forest);}
+  .work .tag{color:var(--ink-dim);}
+  .work--eo .tag{color:var(--ember-blue);}
+  .work--eo .work-linkrow a{color:var(--ember-blue);}
+  .work--eo .work-linkrow a:hover{border-bottom-color:var(--ember-blue);}
+  .work--eo{border-color:color-mix(in srgb, var(--ember-blue) 35%, var(--line));}
   .work h3{font-size:1.25rem;}
   .work p.body{color:var(--ink-dim);line-height:1.55;font-size:0.92rem;flex-grow:1;}
   .work-linkrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:2px;}
@@ -205,7 +191,7 @@
     </article>
 
     <div class="work-grid">
-      <article class="work">
+      <article class="work work--eo">
         <p class="tag">Original Musical Project</p>
         <h3>Ember Oracle</h3>
         <p class="body">A musical project released across streaming platforms — writing and lyrics throughout.</p>
@@ -291,7 +277,8 @@
         r: (Math.random()*1.6+0.6) * devicePixelRatio,
         speed: (Math.random()*0.35+0.12) * devicePixelRatio,
         drift: (Math.random()-0.5)*0.25,
-        alpha: Math.random()*0.5+0.25
+        alpha: Math.random()*0.5+0.25,
+        blue: Math.random() < 0.28
       });
     }
   }
@@ -304,7 +291,7 @@
       if(p.y < -10){ p.y = canvas.height + 10; p.x = Math.random()*canvas.width; }
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = 'rgba(226,144,63,' + p.alpha + ')';
+      ctx.fillStyle = p.blue ? ('rgba(92,179,245,' + p.alpha + ')') : ('rgba(232,93,14,' + p.alpha + ')');
       ctx.fill();
     }
     requestAnimationFrame(tick);
