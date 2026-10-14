@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mark Anderson — Writer &amp; Lyricist</title>
-<meta name="description" content="Portfolio of Mark Anderson — writer and lyricist. Bloom (animated musical feature), Ember Oracle, A Unified Theory, and Poetry for the Peers.">
+<meta name="description" content="Portfolio of Mark Anderson — writer and lyricist. Bloom (animated musical feature), AI-ien (animated sci-fi comedy), Ember Oracle, A Unified Theory, and Poetry for the Peers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -104,6 +104,30 @@
   .work-copy h2{font-size:1.9rem;margin-bottom:10px;}
   .work-copy p.body{color:var(--ink-dim);line-height:1.6;margin-bottom:10px;font-size:0.98rem;}
 
+  /* --- AI-ien (second featured card, retro sci-fi accent) --- */
+  .work--featured + .work--featured{margin-top:22px;}
+  .work--aiien{border-color:color-mix(in srgb, var(--ember-blue) 40%, var(--line));}
+  .work--aiien .work-copy .tag{color:var(--ember-blue-soft);}
+  .work--aiien .btn--small{border-color:color-mix(in srgb, var(--ember-blue) 50%, var(--line));}
+  .aiien-panel{
+    position:relative;aspect-ratio:1200/747;border-radius:3px;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;
+    background:
+      radial-gradient(circle at 72% 30%, rgba(92,179,245,0.55) 0 9%, rgba(47,143,224,0.18) 10% 22%, transparent 23%),
+      repeating-linear-gradient(0deg, rgba(92,179,245,0.07) 0 1px, transparent 1px 22px),
+      repeating-linear-gradient(90deg, rgba(92,179,245,0.07) 0 1px, transparent 1px 22px),
+      linear-gradient(180deg, #08131F 0%, #0B0704 100%);
+  }
+  .aiien-panel .wordmark{
+    font-family:'Cinzel',serif;font-weight:700;font-size:clamp(2.4rem,7vw,3.6rem);
+    letter-spacing:0.08em;color:var(--ink);
+    text-shadow:0 0 18px rgba(92,179,245,0.55);
+  }
+  .aiien-panel .sub{
+    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--ember-blue-soft);
+  }
+
   .work-grid{
     margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
   }
@@ -190,6 +214,21 @@
       </div>
     </article>
 
+    <article class="work--featured work--aiien">
+      <div class="work-media">
+        <div class="aiien-panel" role="img" aria-label="AI-ien — title panel">
+          <span class="wordmark">AI-IEN</span>
+          <span class="sub">A retro sci-fi comedy</span>
+        </div>
+      </div>
+      <div class="work-copy">
+        <p class="tag">Animated Feature — In Development</p>
+        <h2>AI-ien</h2>
+        <p class="body">A retro sci-fi comedy set in a world where artificial intelligence has been banned outright — all because of one mistake that was quietly covered up.</p>
+        <p class="body">The follow-up to Bloom. The story and character bibles are complete, and the full six-act, 48-scene structure is locked. Ten original pieces of music — eight songs and two short musical buttons — are placed against specific scenes, with the lyrics now being written.</p>
+      </div>
+    </article>
+
     <div class="work-grid">
       <article class="work work--eo">
         <p class="tag">Original Musical Project</p>
@@ -227,6 +266,7 @@
     <div class="about-inner">
       <p class="body">I'm a writer, lyricist, and creator based in Barnoldswick, Lancashire. My work spans poetry, songwriting, and emotionally driven storytelling, with a focus on neurodivergent characters and honest family dynamics — written from the inside, not as an outside observer.</p>
       <p class="body"><strong>Bloom</strong>, an animated musical feature, is where most of my energy sits right now: every lyric in its soundtrack is mine, several songs are already recorded as finished demos, and the concept art for every major character was developed under my direction.</p>
+      <p class="body">Next in line is <strong>AI-ien</strong>, a retro sci-fi animated comedy about a world that bans AI after a covered-up mistake — story locked across six acts and 48 scenes, with its original songs now being written.</p>
       <p class="body">Alongside it: <strong>Ember Oracle</strong>, a musical project available on YouTube, Spotify, Apple Music and Amazon Music, with its own Facebook page; <strong>A Unified Theory</strong>, a non-fiction book published on Amazon and Kindle; and a contribution to the collaborative poetry anthology <strong>Poetry for the Peers</strong>.</p>
       <p class="body">Currently developing Bloom full-time, and actively open to collaborators, representation, and production partners.</p>
     </div>
