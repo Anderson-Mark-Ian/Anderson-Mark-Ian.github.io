@@ -109,24 +109,8 @@
   .work--aiien{border-color:color-mix(in srgb, var(--ember-blue) 40%, var(--line));}
   .work--aiien .work-copy .tag{color:var(--ember-blue-soft);}
   .work--aiien .btn--small{border-color:color-mix(in srgb, var(--ember-blue) 50%, var(--line));}
-  .aiien-panel{
-    position:relative;aspect-ratio:1200/747;border-radius:3px;overflow:hidden;
-    display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;
-    background:
-      radial-gradient(circle at 72% 30%, rgba(92,179,245,0.55) 0 9%, rgba(47,143,224,0.18) 10% 22%, transparent 23%),
-      repeating-linear-gradient(0deg, rgba(92,179,245,0.07) 0 1px, transparent 1px 22px),
-      repeating-linear-gradient(90deg, rgba(92,179,245,0.07) 0 1px, transparent 1px 22px),
-      linear-gradient(180deg, #08131F 0%, #0B0704 100%);
-  }
-  .aiien-panel .wordmark{
-    font-family:'Cinzel',serif;font-weight:700;font-size:clamp(2.4rem,7vw,3.6rem);
-    letter-spacing:0.08em;color:var(--ink);
-    text-shadow:0 0 18px rgba(92,179,245,0.55);
-  }
-  .aiien-panel .sub{
-    font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;
-    text-transform:uppercase;color:var(--ember-blue-soft);
-  }
+  .work--aiien{grid-template-columns:0.8fr 1.2fr;}
+  .work--aiien .work-media img{max-height:560px;width:100%;object-fit:contain;}
 
   .work-grid{
     margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
@@ -165,7 +149,7 @@
   footer{padding-block:28px 48px;color:var(--ink-dim);font-size:0.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
 
   @media (max-width:720px){
-    .work--featured{grid-template-columns:1fr;}
+    .work--featured, .work--aiien{grid-template-columns:1fr;}
     .work-grid{grid-template-columns:1fr;}
     .navlinks{gap:14px;}
   }
@@ -215,12 +199,7 @@
     </article>
 
     <article class="work--featured work--aiien">
-      <div class="work-media">
-        <div class="aiien-panel" role="img" aria-label="AI-ien — title panel">
-          <span class="wordmark">AI-IEN</span>
-          <span class="sub">A retro sci-fi comedy</span>
-        </div>
-      </div>
+      <div class="work-media"><img src="aiien-title.jpg" alt="AI-ien — title artwork: a green flying saucer beaming down the AI-ien title in pixel light" width="1024" height="1241" loading="lazy"></div>
       <div class="work-copy">
         <p class="tag">Animated Feature — In Development</p>
         <h2>AI-ien</h2>
