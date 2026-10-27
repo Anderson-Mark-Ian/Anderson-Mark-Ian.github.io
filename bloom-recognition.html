@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom — Recognition &amp; Press</title>
+<meta name="description" content="Recognition and press for Bloom, the animated musical feature by Mark Anderson: Stage 32 pitch session scorecard and producer feedback, FilmPlatforms Member Spotlight and the Before the Credits feature.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0704;
+    --bg-raised:#18110A;
+    --ink:#F4ECDD;
+    --ink-dim:#B3A48C;
+    --ember:#E85D0E;
+    --ember-soft:#FF8A3D;
+    --line: rgba(242,234,217,0.13);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter', system-ui, sans-serif;}
+  img{max-width:100%;}
+  h1,h2,h3{font-family:'Cinzel', Georgia, serif;font-weight:700;letter-spacing:0.01em;text-wrap:balance;margin:0;color:var(--ink);}
+  a{color:inherit;}
+  p{margin:0;}
+  .eyebrow,.section-eyebrow,.navlink,.cap{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    text-transform:uppercase;letter-spacing:0.09em;font-size:0.72rem;
+  }
+  .page{max-width:920px;margin-inline:auto;padding-inline:20px;}
+
+  .topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .topbar-inner{max-width:920px;margin-inline:auto;padding-inline:20px;display:flex;align-items:center;justify-content:space-between;padding-block:14px;}
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:1.05rem;letter-spacing:0.02em;text-decoration:none;}
+  .navlink{color:var(--ink-dim);text-decoration:none;}
+  .navlink:hover{color:var(--ember);}
+
+  .hero{padding-block:72px 48px;
+    background:
+      radial-gradient(circle at 12% 15%, rgba(232,93,14,0.16), transparent 45%),
+      radial-gradient(circle at 88% 80%, rgba(47,143,224,0.10), transparent 48%);
+  }
+  .hero-inner{max-width:640px;}
+  .hero .eyebrow{color:var(--ember);margin-bottom:14px;}
+  .hero h1{font-size:clamp(2.2rem, 6vw, 3.2rem);margin-bottom:18px;}
+  .hero .thesis{font-size:1.06rem;line-height:1.6;color:var(--ink-dim);max-width:54ch;}
+
+  section{padding-block:56px;border-top:1px solid var(--line);}
+  .section-eyebrow{color:var(--ink-dim);margin-bottom:14px;}
+  section h2{font-size:1.7rem;margin-bottom:14px;}
+  .lead{color:var(--ink-dim);line-height:1.65;max-width:62ch;margin-bottom:28px;}
+  .lead strong{color:var(--ink);font-weight:600;}
+
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:760px;}
+  figure{margin:0;}
+  .cards img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:var(--shadow);}
+  .cap{display:block;color:var(--ink-dim);margin-top:10px;}
+
+  .linkrow{display:flex;gap:18px;flex-wrap:wrap;margin-top:24px;}
+  .linkrow a{font-size:0.9rem;font-weight:500;color:var(--ember);text-decoration:none;border-bottom:1px solid transparent;}
+  .linkrow a:hover{border-bottom-color:var(--ember);}
+
+  .fp{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:start;}
+  .short{position:relative;width:100%;max-width:300px;aspect-ratio:9/16;border-radius:6px;overflow:hidden;background:#000;border:1px solid var(--line);}
+  .short iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .feature{background:var(--bg-raised);border:1px solid var(--line);border-left:3px solid var(--ember);border-radius:6px;padding:22px;box-shadow:var(--shadow);}
+  .feature .cap{margin:0 0 10px;color:var(--ember);}
+  .feature h3{font-size:1.25rem;line-height:1.35;margin-bottom:10px;}
+  .feature .meta{color:var(--ink-dim);font-size:0.85rem;margin-bottom:12px;}
+  .feature p.body{color:var(--ink-dim);line-height:1.6;font-size:0.95rem;}
+  .spot{margin-bottom:22px;}
+  .spot h3{font-size:1.15rem;margin-bottom:8px;}
+  .spot p{color:var(--ink-dim);line-height:1.6;font-size:0.95rem;}
+
+  footer{padding-block:28px 48px;color:var(--ink-dim);font-size:0.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);}
+
+  @media (max-width:720px){
+    .cards{grid-template-columns:1fr;max-width:420px;}
+    .fp{grid-template-columns:1fr;}
+    .short{margin-inline:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./">Mark Anderson</a>
+    <a class="navlink" href="./#works">← Back to portfolio</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="page">
+    <div class="hero-inner">
+      <p class="eyebrow">Bloom · Recognition &amp; Press</p>
+      <h1>Recognition &amp; Press</h1>
+      <p class="thesis">Bloom is an original animated musical feature: a lonely girl, a boy who claims he used to be a tree, and an ancient forest worth saving. Here is what the industry has said about it so far.</p>
+    </div>
+  </div>
+</div>
+
+<main class="page">
+
+  <section>
+    <p class="section-eyebrow">Stage 32 · Pitch Session · October 2026</p>
+    <h2>Shortlisted by a producer</h2>
+    <p class="lead">Bloom was <strong>shortlisted by a producer</strong> after a Stage 32 pitch session, scoring in the <strong>top 9% for Concept &amp; Hook</strong> and the <strong>top 11% for Genre, Tone &amp; Originality</strong>.</p>
+    <div class="cards">
+      <figure>
+        <img src="stage32-scorecard.jpg" width="560" height="700" alt="Stage 32 pitch session scorecard for Bloom: Concept and Character Depth. Concept and Hook, top 9%. Genre, Tone and Originality, top 11%.">
+        <figcaption class="cap">Pitch session scorecard</figcaption>
+      </figure>
+      <figure>
+        <img src="stage32-feedback.png" width="560" height="700" alt="Stage 32 pitch session feedback: From a commercial standpoint, I can see potential for an emotionally grounded animated fantasy with a distinctive visual identity.">
+        <figcaption class="cap">Feedback from the pitch session</figcaption>
+      </figure>
+    </div>
+    <div class="linkrow">
+      <a href="https://www.stage32.com/project/bloom-22" target="_blank" rel="noopener">View Bloom on Stage 32 →</a>
+      <a href="bloom-stage32-pitch-pack.pdf" download>Download the Pitch Pack (PDF) ↓</a>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-eyebrow">FilmPlatforms · Global Film Industry Forum</p>
+    <h2>Featured by FilmPlatforms</h2>
+    <div class="fp">
+      <div class="short">
+        <iframe src="https://www.youtube-nocookie.com/embed/NC4VrN0KRk0" title="Meet Mark Anderson | BLOOM – FilmPlatforms Member Spotlight" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div>
+        <div class="spot">
+          <h3>Member Spotlight</h3>
+          <p>FilmPlatforms selected Mark and Bloom for a Member Spotlight video, shared on their YouTube channel.</p>
+          <div class="linkrow" style="margin-top:12px;">
+            <a href="https://youtube.com/shorts/NC4VrN0KRk0" target="_blank" rel="noopener">Watch on YouTube →</a>
+          </div>
+        </div>
+        <article class="feature">
+          <p class="cap">Before the Credits</p>
+          <h3>Mark Anderson — From a Song to an Animated Feature: The Story Behind BLOOM</h3>
+          <p class="meta">FilmPlatforms · 19 October 2026</p>
+          <p class="body">How Bloom grew from a song written late one night into an animated musical feature, and the collaborators and funding it is now looking for.</p>
+          <div class="linkrow" style="margin-top:14px;">
+            <a href="https://filmplatforms.com/threads/mark-anderson-from-a-song-to-an-animated-feature-the-story-behind-bloom.459/" target="_blank" rel="noopener">Read the feature →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Bloom — Recognition &amp; Press</span>
+    <span>Mark Anderson · Lancashire, UK</span>
+  </footer>
+</main>
+
+</body>
+</html>
