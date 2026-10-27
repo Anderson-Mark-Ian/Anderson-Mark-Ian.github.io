@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Oracle — Press</title>
+<meta name="description" content="Press information for Ember Oracle, the music project of Iraq veteran Mark Anderson: songs about veterans' recovery, PTSD and Healthier Heroes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0704;
+    --bg-raised:#18110A;
+    --ink:#F4ECDD;
+    --ink-dim:#B3A48C;
+    --ember:#E85D0E;
+    --ember-soft:#FF8A3D;
+    --ember-blue:#2F8FE0;
+    --line: rgba(242,234,217,0.13);
+    --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter', system-ui, sans-serif;}
+  img{max-width:100%;}
+  h1,h2,h3{font-family:'Cinzel', Georgia, serif;font-weight:700;letter-spacing:0.01em;text-wrap:balance;margin:0;color:var(--ink);}
+  a{color:inherit;}
+  p{margin:0;}
+  .eyebrow,.section-eyebrow,.navlink,.plat{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    text-transform:uppercase;letter-spacing:0.09em;font-size:0.72rem;
+  }
+  .page{max-width:920px;margin-inline:auto;padding-inline:20px;}
+
+  .topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .topbar-inner{max-width:920px;margin-inline:auto;padding-inline:20px;display:flex;align-items:center;justify-content:space-between;padding-block:14px;}
+  .brand{font-family:'Cinzel',serif;font-weight:700;font-size:1.05rem;letter-spacing:0.02em;text-decoration:none;}
+  .navlink{color:var(--ink-dim);text-decoration:none;}
+  .navlink:hover{color:var(--ember);}
+
+  .hero{position:relative;padding-block:76px 56px;
+    background:
+      radial-gradient(circle at 12% 15%, rgba(232,93,14,0.16), transparent 45%),
+      radial-gradient(circle at 88% 80%, rgba(47,143,224,0.14), transparent 48%);
+  }
+  .hero-inner{max-width:640px;}
+  .hero .eyebrow{color:var(--ember);margin-bottom:14px;}
+  .hero h1{font-size:clamp(2.4rem, 6vw, 3.4rem);margin-bottom:18px;}
+  .hero .thesis{font-size:1.08rem;line-height:1.55;color:var(--ink-dim);max-width:52ch;}
+  .photo{display:block;width:100%;max-width:640px;border-radius:6px;margin-top:32px;border:1px solid var(--line);}
+
+  section{padding-block:56px;border-top:1px solid var(--line);}
+  .section-eyebrow{color:var(--ink-dim);margin-bottom:28px;}
+  .prose{max-width:640px;}
+  .prose p{color:var(--ink-dim);line-height:1.7;font-size:1rem;margin-bottom:16px;}
+  .prose em{color:var(--ink);}
+
+  .video{position:relative;padding-top:56.25%;border-radius:6px;overflow:hidden;background:#000;border:1px solid var(--line);margin-bottom:22px;max-width:760px;}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .tracks{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .track{background:var(--bg-raised);border:1px solid color-mix(in srgb, var(--ember-blue) 35%, var(--line));border-radius:6px;padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;}
+  .track .num{color:var(--ember-blue);font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.09em;text-transform:uppercase;}
+  .track h3{font-size:1.15rem;}
+  .track p{color:var(--ink-dim);line-height:1.55;font-size:0.92rem;flex-grow:1;}
+  .track a{font-size:0.85rem;font-weight:500;color:var(--ember-blue);text-decoration:none;border-bottom:1px solid transparent;align-self:flex-start;}
+  .track a:hover{border-bottom-color:var(--ember-blue);}
+
+  .social-list{display:flex;flex-direction:column;gap:8px;}
+  .social-list a{text-decoration:none;font-size:0.98rem;display:inline-flex;align-items:baseline;gap:8px;}
+  .social-list .plat{color:var(--ink-dim);min-width:110px;}
+  .social-list a:hover .handle{color:var(--ember);}
+
+  .contact-direct p{font-size:1.05rem;margin-bottom:8px;}
+  .contact-direct a{text-decoration:none;border-bottom:1px solid var(--line);}
+  .contact-direct a:hover{border-bottom-color:var(--ember);}
+
+  footer{padding-block:28px 48px;color:var(--ink-dim);font-size:0.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);}
+
+  @media (max-width:720px){ .tracks{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./">Mark Anderson</a>
+    <a class="navlink" href="./">← Back to portfolio</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="page">
+    <div class="hero-inner">
+      <p class="eyebrow">Press · Ember Oracle</p>
+      <h1>Songs from the road back.</h1>
+      <p class="thesis">Ember Oracle is the music project of Mark Anderson, an Iraq veteran from Barnoldswick, Lancashire. His songs tell the story of veterans' recovery from the inside: PTSD, trauma, and the long road back.</p>
+      <img class="photo" src="press-photo.jpg" alt="Mark Anderson" onerror="this.style.display='none'">
+    </div>
+  </div>
+</div>
+
+<main class="page">
+
+  <section>
+    <p class="section-eyebrow">About</p>
+    <div class="prose">
+      <p>Mark Anderson served in HM Forces as a Class 2 Communication Systems Operator, including a tour of Iraq in 2006–07. After leaving the forces he worked in telecoms, most recently as a full fibre engineer with Openreach.</p>
+      <p>In April 2026 he began teaching himself to make music, animation and writing, releasing songs under the name Ember Oracle. He writes all his own lyrics and uses AI-assisted tools to produce the music.</p>
+      <p>His most personal work comes from his connection to Healthier Heroes, the Burnley-based organisation supporting veterans. Tracks like "No Longer The Shadow" and "See The Truth" speak directly about recovery there, about what Mark and the other veterans are going through and the strength they find in each other.</p>
+      <p>Mark is also the author of the non-fiction book <em>A Unified Theory</em>, a contributing poet to the anthology <em>Poetry for the Peers</em>, and the writer of <em>Bloom</em>, an animated musical feature that was shortlisted by a producer after a Stage 32 pitch session in October 2026.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-eyebrow">Featured tracks</p>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/4vsSFWdWquE" title="No Longer The Shadow — Ember Oracle" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <div class="tracks">
+      <article class="track">
+        <p class="num">01 · Lead track</p>
+        <h3>No Longer The Shadow</h3>
+        <p>Recovery from inside Healthier Heroes.</p>
+        <a href="https://youtu.be/4vsSFWdWquE" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </article>
+      <article class="track">
+        <p class="num">02</p>
+        <h3>See The Truth</h3>
+        <p>Healthier Heroes and the journey of recovery.</p>
+        <a href="https://youtu.be/cP1lXqTO930" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </article>
+      <article class="track">
+        <p class="num">03</p>
+        <h3>Ghosts Remain</h3>
+        <p>The struggles veterans carry and the trauma beneath.</p>
+        <a href="https://youtu.be/fbqTD1RCYIY" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </article>
+      <article class="track">
+        <p class="num">04</p>
+        <h3>Silent Haunting</h3>
+        <p>The reality of PTSD for soldiers.</p>
+        <a href="https://youtu.be/c3oQhZQXxUk" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-eyebrow">Listen</p>
+    <div class="prose"><p>Songs about veterans' recovery, PTSD and Healthier Heroes, released across streaming platforms — writing and lyrics throughout.</p></div>
+    <div class="social-list">
+      <a href="https://open.spotify.com/artist/3F8PW49fXFlXGzjFJdlQ2l" target="_blank" rel="noopener"><span class="plat">Spotify</span><span class="handle">Ember Oracle</span></a>
+      <a href="https://music.apple.com/us/artist/ember-oracle/6797204333" target="_blank" rel="noopener"><span class="plat">Apple Music</span><span class="handle">Ember Oracle</span></a>
+      <a href="https://music.amazon.co.uk/artists/B0HCLQWTFG/ember-oracle" target="_blank" rel="noopener"><span class="plat">Amazon Music</span><span class="handle">Ember Oracle</span></a>
+      <a href="https://youtube.com/@ember_oracle" target="_blank" rel="noopener"><span class="plat">YouTube</span><span class="handle">@ember_oracle</span></a>
+      <a href="https://www.facebook.com/EmberOracleMusic" target="_blank" rel="noopener"><span class="plat">Facebook</span><span class="handle">Ember Oracle</span></a>
+      <a href="https://www.tiktok.com/@ember_oracle_music" target="_blank" rel="noopener"><span class="plat">TikTok</span><span class="handle">@ember_oracle_music</span></a>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-eyebrow">Press contact</p>
+    <div class="contact-direct">
+      <p>Mark Anderson</p>
+      <p><a href="mailto:anderson5903@hotmail.co.uk">anderson5903@hotmail.co.uk</a></p>
+      <p><a href="tel:+447445922972">(+44) 7445 922 972</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Ember Oracle — Press</span>
+    <span>Lancashire, UK</span>
+  </footer>
+</main>
+
+</body>
+</html>
